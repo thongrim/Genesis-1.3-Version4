@@ -48,6 +48,7 @@ class Beam{
    vector<double> zpos,gavg,gsig,xavg,xsig,yavg,ysig,pxavg,pyavg,bunch,bphi,efld;
    vector<double> bx,by,ax,ay,ex,ey,cu;
    vector< vector<double> > bh,ph;  // harmonic bunching and bunching phase
+   vector<double> allcu;  // current at each step
    
  private:
    BeamSolver solver;

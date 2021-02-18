@@ -14,7 +14,7 @@ DMACRO = -DAAAFFTW
 #  compilers
 #
 VPATH = src/Core src/IO src/Lattice src/Util src/Main src/Loading
-CCOMPILER = h5pcc
+CCOMPILER = h5pcc -DFFTW
 #CCOMPILER = vtcxx -vt:cxx h5pcc -vt:inst manual -DVTRACE
 #
 #  flags

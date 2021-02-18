@@ -49,6 +49,7 @@ void Beam::initDiagnostics(int nz)
   bunch.resize(nz*ns); 
   bphi.resize(nz*ns);
   efld.resize(nz*ns);
+  allcu.resize(nz*ns);
 
   bx.resize(ns);
   by.resize(ns);
@@ -306,7 +307,8 @@ void Beam::diagnostics(bool output, double z)
     pyavg[ioff+is]=bpyavg;
     bunch[ioff+is]=bbavg;
     bphi[ioff+is]=bbphi;
-    efld[ioff+is]=eloss[is];  
+    efld[ioff+is]=eloss[is];
+    allcu[ioff+is]=current[is];
 
     for (int ih=1; ih<bharm;ih++){   // calculate the harmonics of the bunching
       br=0;

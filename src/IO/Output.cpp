@@ -222,6 +222,7 @@ void Output::writeBeamBuffer(Beam *beam)
   this->writeBuffer(gid, "bunching"," ",&beam->bunch);
   this->writeBuffer(gid, "bunchingphase","rad", &beam->bphi);
   this->writeBuffer(gid, "efield","eV/m", &beam->efld);
+  this->writeBuffer(gid, "fullcurrent","A",&beam->allcu);
   
   this->writeBuffer(gid, "betax","m",&beam->bx);
   this->writeBuffer(gid, "betay","m",&beam->by);
